@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary: #fbc903;
+    --backgroundWhite: #fafafc;
+}
+
+body {
+    background: linear-gradient(180deg, var(--backgroundWhite), #f4f4f6);
+    height: 100vh;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-size: 16px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.icon_box {
+    background-color: white;
+    border-radius: 0.3em;
+    color: rgba(0, 0, 0, 0.747);
+    font-size: 1.4em;
+    padding: 0.3em;
+    width: 2.2em;
+    height: 2.2em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon_box:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.116);
+}
+
+.icon_box:hover .icon {
+    color: black;
+}
+
+.location_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location_box .location {
+    margin-left: 0.5em;
+    font-weight: 700 !important;
+}
+
+.location_box .icon {
+    color: var(--primary);
+    font-size: 1.3em;
+}
+
+header .user_image {
+    width: 2.9em;
+    height: 2.9em;
+    overflow: hidden;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+
+header .user_image img {
+    height: 100%;
+}
+
+header .menu_bar {
+    background-color: white;
+}
+
+header .menu_bar::before {
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    top: -22%;
+    left: 0;
+    right: 0;
+    content: "";
+    border-radius: 50%;
+    z-index: -1;
+}
+
+header .menu_bar .icon.active {
+    color: var(--primary);
+}
+
+header .menu_bar .icon {
+    font-size: 1.7em;
+    color: black;
+}
+
+.tab {
+    background-color: white;
+    height: 4em;
+    width: 4em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.116);
+}
+
+.cart_tab {
+    background-color: var(--primary);
+}
+
+.header .search_box {
+    background-color: white;
+    border-radius: 30px;
+    padding: 0.8em 0;
+}
+
+.header .search_box button {
+    border: none !important;
+    background-color: transparent !important;
+    outline: none !important;
+}
+
+.header .search_box .icon {
+    font-size: 1.6em;
+    cursor: pointer;
+}
+
+.header .search_box input.search_field {
+    font-size: 1.3em;
+    flex: 1 !important;
+    margin-left: 13px;
+    border: none;
+    outline: none;
+}
+
+.header .search_box input.search_field::placeholder {
+    color: rgba(0, 0, 0, 0.452);
+}
+
+.filter_icon {
+    background-color: var(--primary);
+    width: 3.4em;
+    height: 3.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.filter_icon:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.116);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* categories section styling */
+.categories .category_icon {
+    height: 4.5em;
+    width: 4.5em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.categories .category_icon .icon {
+    font-size: 1.7em;
+}
+
+.categories .category_icon.active {
+    background-color: var(--primary);
+}
+
+.categories .category_name {
+    font-weight: bold;
+}
+
+.categories_slider {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 110px;
+    max-height: 750px;
+    margin: 0;
+    padding-top: 1px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transform: rotate(-90deg) translateY(-250px);
+    transform-origin: right top;
+    padding: 250px 0 0 0;
+    padding: 90px 0 0 0;
+}
+
+.categories .single_category {
+    max-width: 6.5em;
+    display: block;
+    padding: 5px;
+    transform: rotate(90deg);
+    transform-origin: right top;
+    /* height: 250px; */
+    margin: 30px 0;
+}
+
+
+
+
+::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+}
+
+::-webkit-scrollbar-button {
+    width: 1px;
+    height: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  media queries for website
+    and they should be written at the end of style.css otherwise error occur
+*/
+@media screen and (max-width : px) {}
+
+@media screen and (min-width : px) {}
